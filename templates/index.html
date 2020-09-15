@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sentiment Analysis</title>
+</head>
+<body>
+ <div class= "login">
+    <h1>Sentimental Analysis tool  by Sagar Waghela </h1>
+    
+    
+    <form action = "/predict" method="POST">
+      <input type="text" name="message"  placeholder="Enter the Text" required="required"/>
+      <label for="operation">Select any one Model</label>
+      <select id="operation" name="operation">
+       <option value="Logistic Regression">Logistic Regression</option>
+       <option value="Naive Baise">Naive Baise</option>
+       <option value="Random Forest">Random Forest</option>
+      </select>
+      <input type="submit" value = "Submit">
+    </form>
+    
+    <br>
+    <br>
+    {{result}}
+ </div>
+ 
+</body>
+</html>
